@@ -1,0 +1,33 @@
+<div>
+  <table class="table table-bordered table-stripped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Opciones</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+      <tr *ngFor="let data of listOfEmployees">
+        <td>{{data.employeeId}}</td>
+        <td>{{data.firstName}}</td>
+        <td>{{data.address}}</td>
+        <td>
+          <button mat-raised-button color="warn">
+            Editar
+          </button>
+
+          <button mat-raised-button color="red">
+            Eliminar
+          </button>
+        </td>
+
+      </tr>
+    </tbody>
+
+  </table>
+
+</div>
+
