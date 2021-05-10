@@ -105,7 +105,6 @@
       <tr>
         <th>ID</th>
         <th>Nombre</th>
-        <th>Opciones</th>
       </tr>
     </thead>
 
@@ -113,16 +112,6 @@
       <tr *ngFor="let data of listOfProducts">
         <td>{{data.productId}}</td>
         <td>{{data.productName}}</td>
-        <td>
-          <button class="btn btn-lg btn-outline-primary">
-            Editar
-          </button>
-
-          <button class="btn btn-lg btn-outline-primary"
-                  data-backdrop="static" data-keyboard="false">
-            Eliminar
-          </button>
-        </td>
 
       </tr>
     </tbody>
